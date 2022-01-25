@@ -1,0 +1,98 @@
+#footer {
+  width: 100%;
+  height: 330px;
+  background-color: #e1b6a5;
+  padding-top: 60px;
+  position: relative;
+}
+#footer::after {
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.footerWrap {
+  height: 100%;
+  position: relative;
+}
+
+#footer .footer_left {
+  float: left;
+}
+#footer .footer_left .logo {
+  font-size: 0;
+  display: block;
+  margin-bottom: 30px;
+}
+#footer .footer_left .logo img {
+  display: block;
+}
+#footer .footer_left ul.sns {
+  display: inline-block;
+}
+#footer .footer_left ul.sns li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+/* #footer .footer_left ul.sns li.fcbook{margin-left: 5px; margin-right: 30px;} */
+#footer .footer_left ul.sns li a {
+  display: inline-block;
+  text-align: center;
+}
+
+#footer ul.gnbWrap {
+  float: right;
+}
+ul.gnbWrap > li {
+  float: left;
+  padding-right: 90px;
+}
+ul.gnbWrap > li h5 {
+  font: bold 22px "NanumSquareR";
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+ul.gnbWrap > li ul.lnbWrap > li {
+  text-align: left;
+  margin-bottom: 15px;
+}
+ul.gnbWrap > li ul.lnbWrap li a {
+  display: block;
+  font: 600 15px "NanumSquareL";
+  color: #fff;
+}
+ul.gnbWrap > li ul.lnbWrap li > a.gnbMenu:hover {
+  color: #e6627b;
+}
+
+#footer .infoWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -640px;
+}
+#footer .infoWrap ul {
+  margin: 0 269px;
+}
+#footer .infoWrap ul li {
+  float: left;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font: bold 12px "NanumSquareL";
+}
+/* ul.infoWrap li:last-child{padding-right: 0;} */
+#footer .infoWrap ul li a {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  font: bold 12px "NanumSquareL";
+}

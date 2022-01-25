@@ -1,0 +1,258 @@
+/* sectionWrap */
+#sectionWrap {
+}
+
+/* section01_way */
+.section01_way {
+  width: 1280px;
+  margin: 100px auto;
+}
+.section01_way .section01_title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  font-family: "GmarketSansM";
+}
+.section01_way .section01_title i {
+  display: block;
+}
+.section01_way .section01_title i img {
+  width: 100px;
+  height: auto;
+}
+.section01_way .section01_title h3 {
+  padding: 40px 0;
+  font-weight: bold;
+}
+
+.boxes {
+  width: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+  perspective: 1000px;
+}
+.box:nth-child(3n) {
+  margin-right: 0 !important;
+}
+.relative {
+  position: relative;
+}
+
+.relative:hover .front {
+  transform: rotateY(180deg);
+}
+.relative:hover .back {
+  transform: rotateX(0) rotateY(0);
+  z-index: 2;
+}
+
+.front,
+.back {
+  width: 100%;
+  min-height: 280px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+  color: #333;
+
+  position: relative;
+  transform-style: preserve-3d;
+
+  backface-visibility: hidden;
+  transition: all 0.3s ease;
+
+  padding-bottom: 10%;
+}
+
+.front {
+  background-color: #fff;
+  z-index: 1;
+  transform: rotateX(0) rotateY(0);
+}
+
+.back {
+  background: #7ab5c7;
+
+  transform: rotateY(-180deg);
+  /* 겹쳐주기 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(60px) scale(0.94);
+}
+.front .inner i {
+  margin-bottom: 30px;
+}
+.front .inner i img {
+  width: 80px;
+  height: 80px;
+}
+.front .inner h4 {
+  font-size: 36px;
+  position: relative;
+  font-family: "GmarketSansM";
+}
+
+.back .inner {
+  width: 80%;
+}
+.back .inner span {
+  font-size: 20px;
+  position: relative;
+  font-family: "NanumSquareL";
+  color: #fff;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* devider */
+.devider {
+  width: 60%;
+  border-top: 1px solid #ccc;
+  margin-bottom: 130px;
+}
+
+/* section02 -삭제 */
+
+/* section03_banner */
+.section03_banner {
+  width: 1280px;
+  margin: 100px auto;
+}
+.section03_banner .bannerWrap {
+  background-color: #f4e19d;
+  height: 380px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.section03_banner .bannerWrap .bg_img {
+  background: url(../img/sub1/sub1_banner.jpg) no-repeat center;
+  width: 100%;
+  height: 100%;
+}
+.section03_banner .bannerWrap > p {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  font: 40px "NanumSquareB";
+  color: #333;
+  width: 300px;
+  text-align: left;
+}
+.section03_banner .bannerWrap a {
+  position: absolute;
+  left: 8%;
+  bottom: 15%;
+  font: bold 16px "NanumSquareR";
+  color: #333;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.section03_banner .bannerWrap a > p {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+.section03_banner .bannerWrap a > i {
+  position: absolute;
+  top: 8px;
+  right: 17px;
+  font-size: 24px;
+  transition: all 0.2s ease;
+}
+.section03_banner .bannerWrap a:hover > i {
+  right: 11px;
+}
+
+/* section04_q */
+.section04_q {
+  width: 1280px;
+  margin: 100px auto;
+}
+.section04_q .titleWrap {
+  text-align: center;
+}
+.section04_q .titleWrap i {
+}
+.section04_q .titleWrap i img {
+  width: 100px;
+  height: auto;
+}
+.section04_q .titleWrap > h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  font-family: "GmarketSansM";
+  font-weight: bold;
+  padding: 40px;
+  position: relative;
+}
+.section04_q .titleWrap > h3::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #333;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.section04_q .question {
+  margin-top: 50px;
+}
+.section04_q .question .q_box {
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.section04_q .question .q_box .one {
+  font: 26px "NanumSquareB";
+  color: #333;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+.section04_q .question .q_box .one img {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.section04_q .question .q_box .two {
+  font: 20px/1.6 "NanumSquareR";
+  color: #666;
+  display: none;
+}
+.section04_q .question .q_box .two p {
+}
+.section04_q .question .q_box .two p a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #555;
+}
+.section04_q .question .q_box .two p a:hover {
+  color: #333;
+}

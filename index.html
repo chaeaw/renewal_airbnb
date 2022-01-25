@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbnb_renewal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/xeicon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" class="">
+            <div class="container clearFix">
+                <h1 class="logo"><a href="index.html"><img src="img/airbnb_logo_reresize.png.png" alt="에어비앤비"></a></h1>
+                <ul class="gnb clearFix">
+                    <li>
+                        <a href="sub1.html">이용 방법</a>
+                    </li>
+                    <li>
+                        <a href="sub2.html">호스팅</a>
+                    </li>
+                    <li>
+                        <a href="sub3.html">도움말 센터</a>
+                    </li>
+                </ul>
+                <ul class="lnb clearFix">
+                    <li class="lan"><a href="#">한국어</a></li>
+                    <li class="money"><a href="#">KRW</a></li>
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                <div class="mini_sch">
+                    <div class="mini_sch_wrap clearFix">
+                        <div class="button">
+                            <div class="mini_text">
+                                검색 시작하기
+                            </div>
+                            <div class="mini_btn">
+                                <img src="img/search.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- min_sch -->
+            </div><!-- container -->
+        </header>
+        <div class="scrollTop"><i class="xi-caret-up"></i></div>
+        <div id="main_visual">
+            <div class="mvArea">
+                <div class="main_inner">
+                    <!-- before_circle -->
+                    <div class="mvWrap">
+                        <div class="polite visual_swiper">
+                            <div class="mv_list swiper-wrapper">
+                                <div class="mv_item04 swiper-slide"><span></span></div>
+                                <div class="mv_item01 swiper-slide"><span></span></div>
+                                <div class="mv_item02 swiper-slide"><span></span></div>
+                                <div class="mv_item03 swiper-slide"><span></span></div>
+
+                            </div><!-- swiper-wrapper -->
+                        </div><!-- polite visual_swiper -->
+                        <div class="swiper-pagination"></div>
+
+                    </div><!-- mvWrap -->
+                    <a href="#" class="item04_btn on"><i class="xi-caret-up-circle"></i><span>PLAY</span></a>
+                    <div class="airbnb_vid">
+                        <a href="#" class="vid_close">
+                            <img src="img/main_visual/airbnb_vid_close.png" alt="닫기버튼">
+                        </a>
+                        <video autoplay muted class="airbnb">
+                            <source src="img/main_visual/27_cmj_vid.mp4" type="video/mp4">
+                        </video>
+                    </div><!-- airbnb_vid -->
+                </div><!-- main_inner -->
+                <div class="main_txt clearFix">
+                    <span>Unique</span>
+                    <span>Travel</span>
+                    <div class="txt_star">
+                        <img src="img/main_visual/main_visual_star.png" alt="메인비주얼요소">
+                    </div><!-- txt_star -->
+                </div><!-- main_txt -->
+            </div><!-- mvArea -->
+        </div><!-- main_visual -->
+        
+    <div class="contents">
+        <section id="section01_sch" class="container">
+            <div class="btnWrap">
+                <ul class="btnUL">
+                    <li class="accom_btn on">숙소</li>
+                    <li  class="experi_btn">체험</li>
+                </ul>
+            </div><!-- btnWrap -->
+            <div class="schMenu">
+                <ul class="schWrap">
+                    <li class="on accom_sch clearFix">
+                        <div class="where clearFix">
+                            <i></i>
+                            <div class="inputWrap">
+                                <label for="where">위치</label>
+                                <input type="text" placeholder="어디로 여행가세요?" autocomplete="off" id="where">
+                            </div>
+                        </div><!-- where -->
+                        <div class="checkInOut clearFix">
+                            <div class="checkIn">
+                                <div class="button clearFix">
+                                    <i></i>
+                                    <div class="txtWrap">
+                                        <span class="subTitle">체크인</span>
+                                        <span>날짜입력</span>
+                                    </div><!-- txtWrap -->
+                                </div>
+                            </div><!-- checkIn -->
+                            <div class="checkOut">
+                                <div class='button'>
+                                    <i></i>
+                                    <div class="txtWrap">
+                                        <span class="subTitle">체크아웃</span>
+                                        <span>날짜입력</span>
+                                    </div><!-- txtWrap -->
+                                </div>
+                            </div><!-- checkOut -->
+                        </div><!-- checkInOut -->
+                        <div class="guest">
+                            <div class='button'>
+                                <i></i>
+                                <div class="txtWrap">
+                                    <span class="subTitle">인원</span>
+                                    <span>게스트 추가</span>
+                                </div><!-- txtWrap -->
+                            </div>
+                        </div><!-- guest -->
+                        <div class="schBtn">
+                            <div class="search">search</div>
+                        </div>
+                    </li><!-- accom_sch -->
+                    <li class="experi_sch clearFix">
+                        <div class="where1 clearFix">
+                            <i></i>
+                            <div class="inputWrap">
+                                <label for="where1">위치</label>
+                                <input type="text" placeholder="어디로 여행가세요?" autocomplete="off" id="where1">
+                            </div>
+                        </div><!-- where -->
+                        <div class="when">
+                            <div class="button clearFix">
+                                <i></i>
+                                <div class="txtWrap">
+                                    <span class="subTitle">체크인</span>
+                                    <span>날짜입력</span>
+                                </div><!-- txtWrap -->
+                            </div>
+                        </div><!-- when -->
+                        <div class="schBtn">
+                            <div class="search">search</div>
+                        </div>
+                    </li><!-- experi_sch -->
+                </ul>
+            </div><!-- schWrap -->
+        </section>
+
+        <section id="section02_reco" class="container">
+            <div class='titleWrap'>
+                <i><img src="img/section02/section02_star.png" alt="섹션2요소"></i>
+                <h2>여행은 살아보는거야!</h2>
+            </div>
+            <ul class="contents clearFix">
+                <li class="con1"  data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="easeInSine"
+                data-aos-duration="500">
+                    <div class="img"><img src="img/section02/section02_01resize.png" alt="집 전체 이미지"></div>
+                    <h3>집 전체</h3>
+                    <span>숙소 전체를 빌려 보다 편안하고 안전하게<br>파티나 여행을 즐겨보세요.</span>
+                    <button>VIEW MORE</button>
+                </li><!-- con1 -->
+                <li class="con2"  data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="easeInSine"
+                data-aos-duration="500"
+                data-aos-delay="200">
+                    <div class="img"><img src="img/section02/section02_02resize.png" alt="자연과 함께 이미지"></div>
+                    <h3>자연과 함께</h3>
+                    <span>도시에서 벗어나 푸른 자연을 만끽하며<br>스트레스를 해소해보세요.</span>
+                    <button>VIEW MORE</button>
+                </li><!-- con1 -->
+                <li class="con3"  data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="easeInSine"
+                data-aos-duration="500"
+                data-aos-delay="400">
+                    <div class="img"><img src="img/section02/section02_03resize.png" alt="반려동물과 함께 이미지"></div>
+                    <h3>반려동물과 함께</h3>
+                    <span>반려 동물도 함께, 가족 모두가 여행을 즐길 수 있는<br>숙소들을 모아봤어요.</span>
+                    <button>VIEW MORE</button>
+                </li><!-- con1 -->
+            </ul><!-- contents -->
+        </section>
+
+
+        <section id="section03_exp" class="container clearFix">
+            <div class='txtWrap'>
+                <h2>여행 본능을<br>깨우는 체험</h2>
+                <span>온라인 체험으로 집에서 랜선 여행을 즐기세요.</span>
+            </div>
+            <button>MORE</button>
+            <div class="left_btn">
+                <ul class="left_btnWrap clearFix">
+                    <li class="on">쿠킹</li>
+                    <li>베이킹</li>
+                    <li>댄스</li>
+                    <li>피트니스</li>
+                    <li>역사문화</li>
+                    <li>음악</li>
+                    <li>엔터테인먼트</li>
+                    <li>웰빙</li>
+                    <li>동물</li>
+                </ul>
+            </div><!-- right_btn -->
+            <div class="right_vid">
+                <div class="vid">
+                    <video  class="on" muted>
+                        <source src="img/section03/section03_vid1.webm" type="video/webm">
+                    </video>
+                    <video muted>
+                        <source src="img/section03/section03_vid2.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid3.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid4.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid5.webm" type="video/webm">
+                    </video>                    
+                    <video muted> 
+                        <source src="img/section03/section03_vid6.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid7.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid8.webm" type="video/webm">
+                    </video>                    
+                    <video muted>
+                        <source src="img/section03/section03_vid9.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="vid_btn">
+                    <button class="start"><i></i></button>
+                    <button class="stop"><i></i></button>
+                    <button class="pause"><i></i></button>
+                </div>
+            </div><!-- left_vid -->
+        </section>
+
+
+        <section id="section04_theme" class="container clearFix" data-aos="zoom-in" data-oas-easing="cubic-bezier(.175,.885,.32,1.275)">
+            <ul class="allWrap">
+                <li class='txtWrap'>
+                    <span class="sub">AIRBNB THEME</span>
+                    <h2>여름엔<br>시원한 물놀이!</h2>
+                    <button>MORE</button>
+                </li><!-- title -->
+                <!-- card section -->
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_01.jpg" alt="섹션4 1번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>깊은하루에서 머무르는 시간은 당신에게 영화속 한장면이 될것 ...</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.79</span>
+                                    <span>(후기 86개)</span>
+                                </p>
+                                <span>제주도, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_02.jpg" alt="섹션4 2번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>B타입-102호 물놀이 하는 시골집 손님방 / 편한 침실 / 캠핑 / 바 ...</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.79</span>
+                                    <span>(후기 80개)</span>
+                                </p>
+                                <span>공주, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_03.jpg" alt="섹션4 3번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>비치보이스, Boy25</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.78</span>
+                                    <span>(후기 54개)</span>
+                                </p>
+                                <span>제주도, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>              
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_04.jpg" alt="섹션4 4번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>속초해변 앞 우리들만의 쉼터 [속초 로망스]</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.94</span>
+                                    <span>(후기 28개)</span>
+                                </p>
+                                <span>속초, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>             
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_05.jpg" alt="섹션4 5번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>성산패밀리하우스/45평형복층형 패밀리팬션 성산일출봉 우도항 ...</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.89</span>
+                                    <span>(후기 165개)</span>
+                                </p>
+                                <span>제주도, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>              
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_06.jpg" alt="섹션4 6번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>[제주 바다 앞] ☆뜨거운 여름 특가 ☆ 테라스형 - 객실 내 온수 스파 ...</h4>
+                                <p>
+                                    <img src="img/section4/section04_star4.png" alt="별점 4점">
+                                    <span class="avg">4.87</span>
+                                    <span>(후기 77개)</span>
+                                </p>
+                                <span>제주도, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>        
+                <li>
+                    <div class="card">
+                            <img src="img/section4/secion04_07.jpg" alt="섹션4 7번째">
+                            <div class="img_overlay"></div>
+                            <div class="view_details">View Details</div>
+                        <div class='conTxtWrap'>
+                            <div class="conTxtContainer">
+                                <h4>차량suv만가능)개인만 사용할 수 있는 큰 계곡과 사람 보기힘든 ...</h4>
+                                <p>
+                                    <img src="img/section4/section04_star5.png" alt="별점 4점">
+                                    <span class="avg">5.0</span>
+                                    <span>(후기 14개)</span>
+                                </p>
+                                <span>춘천, 대한민국</span>
+                            </div><!-- conTxtContainer -->
+                        </div><!-- conTxtWrap -->
+                    </div><!-- card -->
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="section05_banner" class="container">
+            <div class="section05_bannerWrap">
+                <div class="swiper section05_swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide section501">
+                            <div class='txtWrap'>
+                                <h4>코로나 대응방안</h4>
+                                <span>에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</span>
+                            </div><!-- txtWrap -->
+                            <span class="illust">
+                                <img src="img/section05/section501.png" alt="섹션5 1번째">
+                            </span>
+                        </div>
+                        <!-- section501 -->
+                        <div class="swiper-slide section502">
+                            <div class='txtWrap'>
+                                <h4>호스팅 시작하기</h4>
+                                <span>숙소를 공유하여 부수입을 올리고 새로운 가능성을 만나세요.</span>
+                            </div><!-- txtWrap -->
+                            <span class="illust">
+                                <img src="img/section05/section502.png" alt="섹션5 2번째">
+                            </span>
+                        </div>
+                        <!-- section502 -->
+                        <div class="swiper-slide section503">
+                            <div class='txtWrap'>
+                                <h4><img src="img/section05/section503_logo.png" alt="에어비앤비 플러스 로고"></h4>
+                                <span>퀄리티와 편안함이 검증된 에어비앤비 플러스 숙소를 둘러보세요.</span>
+                            </div><!-- txtWrap -->
+                            <span class="illust">
+                                <img src="img/section05/section503.png" alt="섹션5 3번째">
+                            </span>
+                        </div>
+                        <!-- section503 -->
+                        <div class="swiper-slide section504">
+                            <div class='txtWrap'>
+                                <h4><img src="img/section05/section504_logo.png" alt="에어비앤비 럭스 로고"></h4>
+                                <span>특별함으로 가득한 럭셔리 숙소에서 최고의 서비스를 받으실 수 있습니다.</span>
+                            </div><!-- txtWrap -->
+                            <span class="illust">
+                                <img src="img/section05/section504.png" alt="섹션5 4번째">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- swiper-wrapper -->
+                
+                
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                
+                </div>
+                <!-- section05_swiper -->
+            </div>
+            <!-- section05_bannerWrap -->
+        </section>
+
+
+        <section id="section06_news">
+            <div class="section06_wrap container clearFix">
+                <div class="titleWrap" data-aos="fade-down-right"
+                data-aos-easing="easeOutQuart"
+                data-aos-duration="500">
+                    <span class="sub">AIRBNB NEWS</span>
+                    <h2>에어비앤비<br>뉴스룸</h2>
+                </div><!-- titleWrap -->
+                <div class="swiper section06_swiper" data-aos="fade-left"
+                data-aos-easing="easeOutQuart"
+                data-aos-duration="500">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide section601"><img src="img/section06/section06_1.jpg" alt="섹션6 1번째"></div>
+                        <div class="swiper-slide"><img src="img/section06/section06_2.jpg" alt="섹션6 2번째"></div>
+                        <div class="swiper-slide">
+                            <img src="img/section06/section06_3.jpg" alt="섹션6 3번째">
+                        </div>
+                    </div>
+                    <!-- swiper-wrapper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div><!-- section06_swiper -->
+        
+                <div class='section06_info' data-aos="fade-right"
+                data-aos-easing="easeOutQuart"
+                data-aos-duration="500">
+                    <div class='infoWrap'>
+                        <div class="info info01 on">
+                            <div class="infoTitle">
+                                <span>해외</span>
+                                <h4>‘유연한 여행지’를 통해 개성 넘치는 독특한 숙소로의 여행을 간단하게 계획해보세요!</h4>
+                            </div><!-- infoTitle -->
+                            <hr>
+                            <div class="infoSub">
+                                <span>‘유연한 여행지’는 특정한 목적지보다 독특한 공간에서의 숙박이 중요한 새로운 방식의 여행을 계획할 때 이용할 수 있는 기능이다. 
+                                    ‘유연한 검색’을 클릭하면 보트부터 초소형 주택, 돔 하우스, A자형 주택, 심지어 개인 소유의 섬 등 다양한 카테고리의 독특한 숙소를 만나볼 수 있으며, 검색 결과를 지도상에서도 확인할 수 있다.</span>
+                                <div class='infoSub_btm clearFix'>
+                                    <p><i class='xi-time-o'></i>2021-07-07 · 숙소, 커뮤니티</p>
+                                    <button>MORE<i class='xi-angle-right'></i></button>
+                                </div>
+                            </div><!-- infoSub -->
+                        </div><!-- info01 -->
+                        <div class="info info02">
+                            <div class="infoTitle">
+                                <span>국내</span>
+                                <h4>이니스프리 제주하우스에서 특별한 체험과 숙박을 경험하세요!</h4>
+                            </div><!-- infoTitle -->
+                            <hr>
+                            <div class="infoSub">
+                                <span>게스트에게는 녹차밭을 온 몸으로 느낄 수 있는 다양
+                                    한 체험 프로그램이 기다리고 있다. 돌송이 차밭에서
+                                    는 녹차 연구개발 전문가와 함께 신선한 찻잎을 따보
+                                    고, 녹차밭 한가운데 있는 특별한 건축물 안에서 한국
+                                     전통 다례를 모티브로 한 다례 체험 시간을 가지며 
+                                    녹차의 깊은 세계를 음미하는 시간을 보낸다.</span>
+                                <div class='infoSub_btm clearFix'>
+                                    <p><i class='xi-time-o'></i>2021-06-20 · 숙소, 체험</p>
+                                    <button>MORE<i class='xi-angle-right'></i></button>
+                                </div>
+                            </div><!-- infoSub -->
+                        </div><!-- info02 -->
+                        <div class="info info03">
+                            <div class="infoTitle">
+                                <span>해외</span>
+                                <h4>전설적인 건축가 ‘안토니 가우디’의 ‘까사 비센스’에서
+                                    하루를 보낼 수 있는 기회!</h4>
+                            </div><!-- infoTitle -->
+                            <hr>
+                            <div class="infoSub">
+                                <span>행운의 게스트를 위해 까사 비센스에서는 가우디를 주제로 한 다양한 체험이 마련된다. 먼저, 가우디가 건축 양식의 기초를 다진 이 집을 원래의 형태로 복구하고 박물관으로 탈바꿈 시킨 복원 프로젝트 팀원이자 호스트인 에밀리가 건물의 역사와 공간을 안내하는 투어를 진행한다. </span>
+                                <div class='infoSub_btm clearFix'>
+                                    <p><i class='xi-time-o'></i>2021-06-29 · 숙소</p>
+                                    <button>MORE<i class='xi-angle-right'></i></button>
+                                </div>
+                            </div><!-- infoSub -->
+                        </div><!-- info03 -->
+
+                    </div>
+        
+                </div><!-- section06_wrap -->
+            </div>
+        </section>
+
+
+
+        <section id="section07_desti">
+            <div class="section07_wrap container clearFix">
+                <div class="titleWrap">
+                <span class="sub">AIRBNB DESTINATION</span>
+                <h2>인기있는 국내여행지</h2>
+                </div><!-- titleWrap -->
+                <div class="swiper section07_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>서울</h3>
+                                    <span>Seoul</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/seoul.png" alt="서울아이콘">
+                        </a>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>부산</h3>
+                                    <span>Busan</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/busan_resize.png" alt="부산아이콘">
+                        </a>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>대구</h3>
+                                    <span>Daegu</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/daegu_resize.png" alt="대구아이코">
+                        </a>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>전주</h3>
+                                    <span>Jeonju</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/jeonju_resize.png" alt="전주아이콘">
+                        </a>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>속초</h3>
+                                    <span>Sokcho</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/sokcho_resize.png" alt="속초아이콘">
+                        </a>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="infoWrap clearFix">
+                                <i><img src="img/section07/section07_point.png" alt="포인트이미지"></i>
+                                <div class="infoTitle">
+                                    <h3>제주도</h3>
+                                    <span>Jeju-do</span>
+                                </div><!-- infoTitle -->
+                            </div><!-- infoWrap -->
+                            <img src="img/section07/jeju-do_resize.png" alt="제주도아이콘">
+                        </a>
+                    </div><!-- swiper-slide -->
+
+                </div><!-- swiper-wrapper -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                </div><!-- section07_swiper -->
+            </div>
+        </section>
+
+
+        <section id="section08_Fbanner" class= "clearFix">
+            <div class="banner_left">
+                <div class="bg"><span></span><img src="img/section08/section08_1.jpg" alt="섹션8 배경이미지"></div>
+                <div class="infoWrap">
+                    <h2>어디든 상관없이<br>
+                        떠나고 싶을 때</h2>
+                    <span>언제든 어디로든 떠나고 싶을 때<br>
+                        에어비앤비가 도와드립니다!</span>
+                    <button>유연한 검색</button>
+                </div><!-- infoWrap -->
+            </div><!-- banner_left -->
+            <div class="banner_right">
+                <div class="bg">
+                    <img src="img/section08/section08_2.png" alt="">
+                </div>
+                <div class="rightWrap">
+                    <h2>에어비앤비 앱에서<br>
+                        간편하게 숙소를 예약하세요!</h2>
+                    <span>에어비앤비 앱을<br>
+                        다운로드받아 사용해보세요</span>
+                    <div class="app_btn">
+                        <a href="#"><img src="img/section08/section08_2_apple.png" alt="애플스토어"></a>
+                        <a href="#"><img src="img/section08/section08_2_google.png" alt="구글 플레이스토어"></a>
+                    </div><!-- app_btn -->
+                </div><!-- rightWrap -->
+            
+            </div><!-- banner_right -->
+        </section>
+    </div><!-- contents -->
+
+
+        <footer id="footer">
+            <div class="footerWrap container clearFix">
+                <div class='footer_left'>
+                    <h1 class="logo"><img src='img/airbnb_logo_reresize_white.png' alt="에어비앤비 로고"></h1>
+                    <ul class="sns clearFix">
+                        <li><a href="#"><img src="img/footer/footer_sns_twt.png" alt="트위터 아이콘"></a></li>
+                        <li><a href="#"><img src="img/footer/footer_sns_insta.png" alt="인스타 아이콘"></a></li>
+                        <li><a href="#"><img src="img/footer/footer_sns_tube.png" alt="유튜브 아이콘"></a></li>
+                        <li class="fcbook"><a href="#"><img src="img/footer/footer_sns_fcbook.png" alt="페이스북 아이콘"></a></li>
+                        <li><a href="#"><img src="img/footer/footer_sns_blog.png" alt="블로그 아이콘"></a></li>
+                    </ul><!-- sns -->
+                </div>
+                <ul class="gnbWrap clearFix">
+                    <li>
+                        <h5>소개</h5>
+                        <ul class="lnbWrap">
+                            <li ><a href="sub1.html" class="gnbMenu">이용 방법</a></li>
+                            <li><a href="#">비즈니스 프로그램</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">창립자편지</a></li>
+                            <li><a href="#">뉴스룸</a></li>
+                        </ul><!-- lnbWrap -->
+                    </li>
+                    <li>
+                        <h5>호스팅</h5>
+                        <ul class="lnbWrap">
+                            <li ><a href="sub2.html" class="gnbMenu">숙소 호스팅</a></li>
+                            <li><a href="#">온라인체험 호스팅</a></li>
+                            <li><a href="#">체험 호스팅</a></li>
+                            <li><a href="#">책임감있는 호스팅</a></li>
+                            <li><a href="#">자료센터</a></li>
+                        </ul><!-- lnbWrap -->
+                    </li>
+                    <li>
+                        <h5>지원</h5>
+                        <ul class="lnbWrap">
+                            <li ><a href="sub3.html" class="gnbMenu">도움말 센터</a></li>
+                            <li><a href="#">코로나19 대응 방안</a></li>
+                            <li><a href="#">예약 취소 옵션</a></li>
+                            <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+                            <li><a href="#">신뢰와 안전</a></li>
+                        </ul><!-- lnbWrap -->
+                    </li>
+                    <li>
+                        <h5>패밀리 사이트</h5>
+                        <ul class="lnbWrap">
+                            <li><a href="#">Airbnb Plus</a></li>
+                            <li><a href="#">Airbnb Luxe</a></li>
+                            <li><a href="#">Airbnb.org</a></li>
+                        </ul><!-- lnbWrap -->
+                    </li>
+                </ul><!-- gnbWrap -->
+                <div class="infoWrap">
+                    <ul class="clearFix">
+                        <li>ⓒ 2021 Airbnb, Inc.</li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">한국의 변경된 환불 정책</a></li>
+                        <li><a href="#">회사 세부정보</a></li>
+                    </ul>
+                </div>
+            </div><!-- container -->
+        </footer>
+
+        
+    </div><!-- wrap -->
+    <script>
+
+        //main_visual 슬라이드
+        var swiper = new Swiper(".visual_swiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+      swiper.on('slideChange', function () {
+  console.log('slide changed');
+});
+      swiper.on('slideChangeTransitionEnd', function(){
+          if(this.activeIndex == 0){
+              $('.item04_btn').addClass('on');
+          } else{
+            $('.item04_btn').removeClass('on');
+          }
+      });
+
+      
+
+        // section05 배너 슬라이드
+        var swiper = new Swiper(".section05_swiper", {
+            slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        // section06 뉴스룸 슬라이드
+        var swiper = new Swiper(".section06_swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // section07 여행지추천 슬라이드
+      var swiper = new Swiper(".section07_swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+      });
+
+    AOS.init();
+
+    
+    </script>
+</body>
+</html>

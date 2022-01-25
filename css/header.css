@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "NanumSquareB";
+  src: url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareEB";
+  src: url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareL";
+  src: url(../font/NanumSquareL.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareR";
+  src: url(../font/NanumSquareR.woff) format("woff");
+}
+
+@font-face {
+  font-family: "GmarketSansB";
+  src: url(../font/GmarketSansBold.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansM";
+  src: url(../font/GmarketSansMedium.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansL";
+  src: url(../font/GmarketSansLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url(../font/Bahnschrift.woff) format("woff");
+}
+
+/* common */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "NanumSquareL";
+  background-color: #fcf7ef;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: default;
+}
+
+#wrap {
+  width: 100%;
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  transition: all 0.3s;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 30%,
+    transparent
+  );
+  box-sizing: border-box;
+  position: fixed;
+  transition: all 0.6s ease-in-out;
+  position: fixed;
+}
+
+/* header.on */
+#header.on {
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+#header .mini_sch.on {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, -18px);
+  display: block;
+  box-sizing: border-box;
+  transition: all 0.6s ease-in-out;
+}
+#header .mini_sch.on .mini_sch_wrap {
+  width: 300px;
+}
+#header .mini_sch.on .mini_sch_wrap .button {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  height: 50px;
+  font: bold 14px "NanumSquareL";
+  border-radius: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+}
+#header .mini_sch.on .mini_sch_wrap .button .mini_text {
+  display: block;
+  padding: 10px 20px;
+  float: left;
+  box-sizing: border-box;
+  margin-top: 7px;
+}
+#header .mini_sch.on .mini_sch_wrap .button .mini_btn {
+  float: right;
+  width: 35px;
+  height: 35px;
+  background-color: #e6627b;
+  border-radius: 35px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 6px 10px;
+}
+#header .mini_sch.on .mini_sch_wrap .button .mini_btn img {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#header .mini_sch {
+  display: none;
+  transition: all 0.6s ease-in-out;
+}
+
+/* logo */
+#header .logo {
+  float: left;
+  margin-top: 25px;
+}
+#header .logo > a {
+  display: block;
+}
+#header .logo > a > img {
+}
+
+/* gnb */
+#header ul.gnb {
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+#header ul.gnb li {
+  float: left;
+  padding: 5px 15px;
+}
+#header ul.gnb li a {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  font-family: "NanumSquareR";
+  font-weight: bold;
+}
+#header ul.gnb li a:hover {
+  color: #e6627b;
+}
+
+/* lnb */
+#header ul.lnb {
+  float: right;
+  margin-top: 40px;
+}
+#header ul.lnb li {
+  float: left;
+  padding-left: 35px;
+}
+#header ul.lnb li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-family: "NanumSquareL";
+  font-weight: bold;
+}
+
+ul.lnb li.lan {
+}
+ul.lnb li.money {
+  position: relative;
+}
+ul.lnb li.money::before {
+  content: "·";
+  display: block;
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+ul.lnb li.login {
+  position: relative;
+}
+ul.lnb li.login a {
+  color: #e6627b !important;
+}
+ul.lnb li.login::after {
+  content: "|";
+  display: block;
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+ul.lnb li.join {
+  position: relative;
+}
+ul.lnb li.join::after {
+  content: "|";
+  display: block;
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+/* scrollTop */
+.scrollTop {
+  display: none;
+}
+.scrollTop.on {
+  background-color: #e6627b;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+}
+.scrollTop i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* 서브페이지 공통 */
+/* main_top */
+.main_top {
+  margin-bottom: 100px;
+}
+.main_top .main_title {
+  width: auto;
+  height: 399px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_top .main_title h2 {
+  font: 45px "GmarketSansB";
+  position: absolute;
+  color: #444;
+}
+.main_top .main_title img {
+  width: auto;
+  height: auto;
+}
