@@ -313,8 +313,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-#section01_sch .btnWrap ul li button {
-}
+
 #section01_sch .btnWrap ul li.on {
   background-color: #e6627b;
 }
@@ -538,8 +537,7 @@ ul.schWrap li:nth-child(1) .checkInOut .checkOut .button i {
   background-size: cover;
   margin: 10px;
 }
-ul.schWrap li:nth-child(1) .checkInOut .checkOut .txtWrap {
-}
+
 ul.schWrap li:nth-child(1) .checkInOut .checkOut .txtWrap span {
   display: block;
   width: 100%;
@@ -580,8 +578,7 @@ ul.schWrap li:nth-child(1) .guest .button i {
   background-size: cover;
   margin: 10px;
 }
-ul.schWrap li:nth-child(1) .guest .txtWrap {
-}
+
 ul.schWrap li:nth-child(1) .guest .txtWrap span {
   display: block;
   width: 100%;
@@ -1023,8 +1020,7 @@ ul.schWrap li:nth-child(2) .schBtn .search {
 #section04_theme {
   margin-top: 150px;
 }
-#section04_theme ul.allWrap {
-}
+
 #section04_theme ul.allWrap li {
   width: 22.75%;
   margin-right: 3%;
@@ -1133,8 +1129,7 @@ ul.schWrap li:nth-child(2) .schBtn .search {
 }
 
 /* conTxtWrap */
-#section04_theme ul.allWrap li .card .conTxtWrap {
-}
+
 #section04_theme ul.allWrap li .card .conTxtWrap .conTxtContainer {
   width: 291px;
   height: 154px;
@@ -1145,6 +1140,7 @@ ul.schWrap li:nth-child(2) .schBtn .search {
   padding: 12px 20px 0 20px;
   box-sizing: border-box;
   transition: all 200ms ease-out;
+  cursor: pointer;
 }
 
 .conTxtWrap .conTxtContainer h4 {
